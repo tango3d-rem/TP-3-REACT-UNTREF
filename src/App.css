@@ -1,0 +1,164 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #7e58a1;
+  color: #333;
+}
+
+/* Estilos para el Cotizador */
+.div-cotizador {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+label {
+  font-size: 16px;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.importe {
+  font-size: 20px;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.guardar, .ver-historial {
+  font-size: 24px;
+}
+
+.ocultar {
+  display: none;
+}
+
+
+/* Estilo para el cuadro emergente de SweetAlert2 */
+.swal2-popup {
+  background-color: #4caf50; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+#toastify-container > div.toastify__close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px 12px 0 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes toastify-fadeout {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Estilos para el Historial */
+.historial {
+  max-width: 100%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+td {
+  font-weight: 400;
+}
+
+.volver-cotizador {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  text-decoration: none;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #ff4141;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Media queries para ajustar los estilos según el tamaño de la pantalla */
+@media (max-width: 768px) {
+  .div-cotizador {
+    margin: 20px;
+  }
+
+  .historial {
+    margin: 20px;
+  }
+}
